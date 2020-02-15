@@ -8,41 +8,41 @@ This template should be used in navbox templates, which should be included at th
 ! Usage
 ! style="width: 9%" | Default value(s)
 |-
-| {{{name}}}
+| <nowiki>{{{name}}}</nowiki>
 | Should be identical to the template's name without namespace.
-| {{{name}}}
+| <nowiki>{{{name}}}</nowiki>
 |-
-| {{{title}}}
+| <nowiki>{{{title}}}</nowiki>
 | Sets the title used at the top of the navbox.
-| {{{title}}}
+| <nowiki>{{{title}}}</nowiki>
 |-
-| {{{state}}}
+| <nowiki>{{{state}}}</nowiki>
 | Allows you to change the collapsing state of the table. [[mw:Manual:Collapsible elements#Common.js script (Before 1.18)|More info]]. Collapsed is removed while on pages in the Template namespace, to make editing easier.
 | collapsible
 |-
-| {{{titlestyle}}}
+| <nowiki>{{{titlestyle}}}</nowiki>
 | Allows custom styling for the title area
 | ''None''
 |-
-| {{{bodystyle}}}
+| <nowiki>{{{bodystyle}}}</nowiki>
 | Allows custom styling for the body area
 | ''None''
 |-
-| {{{groupstyle}}}
+| <nowiki>{{{groupstyle}}}</nowiki>
 | Allows custom styling for the group area
 | ''None''
 |-
-| {{{liststyle}}}
+| <nowiki>{{{liststyle}}}</nowiki>
 | Allows custom styling for the list area
 | ''None''
 |-
-| {{{group1-20}}}
+| <nowiki>{{{group1-20}}}</nowiki>
 | Adds the heading for the group number specified
-| {{{group1}}} = {{{group1}}}<br>{{{group2-20}}} = ''None''
+| <nowiki>{{{group1}}}</nowiki> = <nowiki>{{{group1}}}</nowiki> <br/> <nowiki>{{{group2-20}}}</nowiki> = ''None''
 |-
-| {{{list1-20}}}
+| <nowiki>{{{list1-20}}}</nowiki>
 | Adds text for the list number specified
-| {{{list1}}} = {{{list1}}}<br>{{{list2-20}}} = ''None''
+| <nowiki>{{{list1}}}</nowiki> = <nowiki>{{{list1}}}</nowiki> <br/> <nowiki>{{{list2-20}}}</nowiki> = ''None''
 |}
 
 ;Sample output

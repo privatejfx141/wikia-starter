@@ -1,0 +1,123 @@
+== Description ==
+This template should be used in navbox templates, which should be included at the bottom of each page that is linked in the template.
+
+== Syntax ==
+{| class="article-table " width="100%;"
+|-
+! Parameter(s)
+! Usage
+! style="width: 9%" | Default value(s)
+|-
+| {{{name}}}
+| Should be identical to the template's name without namespace.
+| {{{name}}}
+|-
+| {{{title}}}
+| Sets the title used at the top of the navbox.
+| {{{title}}}
+|-
+| {{{state}}}
+| Allows you to change the collapsing state of the table. [[mw:Manual:Collapsible elements#Common.js script (Before 1.18)|More info]]. Collapsed is removed while on pages in the Template namespace, to make editing easier.
+| collapsible
+|-
+| {{{titlestyle}}}
+| Allows custom styling for the title area
+| ''None''
+|-
+| {{{bodystyle}}}
+| Allows custom styling for the body area
+| ''None''
+|-
+| {{{groupstyle}}}
+| Allows custom styling for the group area
+| ''None''
+|-
+| {{{liststyle}}}
+| Allows custom styling for the list area
+| ''None''
+|-
+| {{{group1-20}}}
+| Adds the heading for the group number specified
+| {{{group1}}} = {{{group1}}}<br>{{{group2-20}}} = ''None''
+|-
+| {{{list1-20}}}
+| Adds text for the list number specified
+| {{{list1}}} = {{{list1}}}<br>{{{list2-20}}} = ''None''
+|}
+
+;Sample output
+<pre>
+{{Navbox
+| name = Navbox
+| title = Navbox
+| state = collapsible
+| bodyclass = hlist
+
+| group1 = Group 1
+| list1 = List 1
+
+| group2 = Group 2
+| list2 = {{Navbox|child
+ | group1 = Group 2.1
+ | list1 = List 2.1
+
+ | group2 = Group 2.2
+ | list2 = {{Navbox|child
+  | group1 = Group 2.2.1
+  | list1 = List 2.2.1
+
+  | group2 = Group 2.2.2
+  | list2 = List 2.2.2
+  }}
+
+ | group3 = Group 2.3
+ | list3 = List 2.3
+ }}
+
+| group3 = Group 3
+| list3 =
+* List 3
+* List
+* List
+}}
+</pre>
+{{Navbox
+| name = Navbox
+| title = Navbox
+| state = collapsible
+| bodyclass = hlist
+
+| group1 = Group 1
+| list1 = List 1
+
+| group2 = Group 2
+| list2 = {{Navbox|child
+ | group1 = Group 2.1
+ | list1 = List 2.1
+
+ | group2 = Group 2.2
+ | list2 = {{Navbox|child
+  | group1 = Group 2.2.1
+  | list1 = List 2.2.1
+
+  | group2 = Group 2.2.2
+  | list2 = List 2.2.2
+  }}
+
+ | group3 = Group 2.3
+ | list3 = List 2.3
+ }}
+
+| group3 = Group 3
+| list3 =
+* List 3
+* List
+* List
+}}
+
+<includeonly>
+[[Category:Templates|{{PAGENAME}}]]
+[[Category:Navbox templates]]
+</includeonly><noinclude>
+[[Category:Template documentation|{{PAGENAME}}]]
+</noinclude>

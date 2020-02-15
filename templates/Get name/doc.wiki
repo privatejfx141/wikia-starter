@@ -1,0 +1,27 @@
+This returns the article name of a disambiguated page's name. E.g.
+
+ <nowiki>{{</nowiki>{{BASEPAGENAME}}<nowiki>|Orange (fruit)}}</nowiki>
+
+returns "{{{{BASEPAGENAME}}|Orange (fruit)}}"
+
+Useful with <nowiki>{{PAGENAME}}</nowiki>.
+
+== Implementation ==
+
+It removes everything after the '''''LAST''''' open bracket character ("'''('''") including the character itself. It then removes trailing spaces off the remaining string.
+
+ <nowiki>{{A|Orange (fruit)         (colour)}}</nowiki>
+
+returns "{{A|Orange (fruit)         (colour)}}"
+
+== Debugging info ==
+
+ <nowiki>{{A|Orange}}</nowiki>
+
+returns "{{A|Orange}}"
+
+<includeonly>
+[[Category:Templates|{{PAGENAME}}]]
+</includeonly><noinclude>
+[[Category:Template documentation|{{PAGENAME}}]]
+</noinclude>

@@ -1,0 +1,14 @@
+<onlyinclude>{| style="{{#if:{{{margins|}}}|margin:{{{margins}}};|margin:0 auto;}} {{#if:{{{width|}}}|width:{{{width}}};}} {{#if:{{{float|}}}|float:{{{float|}}}|float:center}};" border="0" cellpadding="2" cellspacing="0" align="center" 
+
+| style="{{#if:{{{sides|}}}|width:{{{sides}}};|{{#if:{{{width|}}}{{{float|}}}|width:0;|width:10%;}} }}" |
+
+| class="Quote_Left" |“
+
+| <div style=" font-size: 15px;">''<nowiki/>{{{1|Insert the text of the quote here, without quotation marks.}}}<nowiki/>''{{#if:{{{2|<noinclude>Someone</noinclude>}}}|<br/><span style="font-size: 12px; margin-left: 2em;">&mdash;{{{2}}}{{#if:{{{3|<noinclude>Source</noinclude>}}}|, {{{3}}}}}</span>}}</div>
+
+| class="Quote_Right" |”
+
+| style="{{#if:{{{sides|}}}|width:{{{sides}}};|{{#if:{{{width|}}}{{{float|}}}|width:0;|width:10%;}} }}" |
+
+|}</onlyinclude>
+<noinclude>{{Documentation}}</noinclude>

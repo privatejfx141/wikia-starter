@@ -1,0 +1,134 @@
+This template adds a blockquote to an article page, with the addition of an attribute and source.
+
+== Usage ==
+This template accepts three parameters in the following order:
+# The text of the quote.
+# Originator of the quote (optional).
+# Source information (optional). This is normally explanatory text about the orginator of the quote.
+
+<code><nowiki>{{Quote|Phrase}}</nowiki></code> 
+
+'''produces:'''
+
+{{Quote|Phrase}}
+
+{{=}}
+
+<code><nowiki>{{Quote|Phrase|Somebody}}</nowiki></code> 
+
+'''produces:'''
+
+{{Quote|Phrase|Somebody}}
+
+{{=}}
+
+<code><nowiki>{{Quote|Phrase|Somebody|''Source''}}</nowiki></code> 
+
+'''produces:'''
+
+{{Quote|Phrase|Somebody|''Source''}}
+
+== Layout ==
+Sometimes you may wish to choose the layout or place the quote in a non-standard place. In this case it's recommended to set both '''margins''' and '''sides''' to 0 as detailed below.
+
+=== Margins ===
+'''margins''' control the area around the quote and is responsible for centering it. Enter one to four values exactly as you would CSS margin property values. I.e. '''''margins=10px 20px 30px 40px''''' is the same as '''''margins:10px 20px 30px 40px;''''' in CSS.
+
+ <code><nowiki>{{Quote|Phrase|Somebody|margins=0}}</nowiki></code> 
+
+'''produces:'''
+
+{{Quote|Phrase|Somebody|margins=0}}
+
+{{=}}
+
+Notice that it is no longer centered. The default value is "'''''0 auto'''''".
+
+=== Sides ===
+'''sides''' control how much of a gap is left on each side of the quote. This is used instead of margins as margins are already used to center the quote and also margins do not work next to floating elements. Enter NO MORE THAN ONE value exactly as you would in a CSS width property value. I.e. '''''sides=50px''''' is the same as '''''width:50px;''''' in CSS.
+
+ <code><nowiki>{{Quote|Phrase|Somebody|margins=0|sides=0}}</nowiki></code>
+ <code><nowiki>{{Quote|Phrase|Somebody|margins=0|sides=40px}}</nowiki></code>
+'''produces:'''
+
+{{Quote|Phrase|Somebody|margins=0|sides=0}}
+{{Quote|Phrase|Somebody|margins=0|sides=40px}}
+
+{{=}}
+
+Notice the different indents. The default value is
+* "'''''10%'''''" if neither '''sides''' nor '''width''' nor '''float''' is defined 
+* "'''''0'''''" if '''width''' or '''float''' is defined but not '''sides'''.
+
+=== Width ===
+'''width''' controls how wide the quote is. Keep in mind this includes the sides!
+
+ <code><nowiki>{{Quote|Phrase|Somebody|width=50%}}</nowiki></code>
+ <code><nowiki>{{Quote|Phrase|Somebody|width=400px}}</nowiki></code>
+ <code><nowiki>{{Quote|Phrase|Somebody|width=100%}}</nowiki></code>
+'''produces:'''
+
+{{Quote|Phrase|Somebody|width=50%}}
+{{Quote|Phrase|Somebody|width=400px}}
+{{Quote|Phrase|Somebody|width=100%}}
+
+{{=}}
+
+Note: specifying '''width''' will cause '''sides''' to default to "'''''0'''''" unless '''sides''' has also been specified.
+
+=== Float ===
+'''float''' sets the float of the quote. Not that the text from each line merges into a single paragraph.
+
+ <code><nowiki>{{Quote|Phrase|Somebody|float=left}} Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text.</nowiki></code>
+ <code><nowiki>{{Quote|Phrase|Somebody|float=right}} Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.</nowiki></code>
+
+'''Would yield something like'''
+
+{{Quote|Phrase|Somebody|float=left}} Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text.
+{{Quote|Phrase|Somebody|float=right}} Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.
+{{=}}
+{{H}}
+{{=}}
+Use [[:Template:-|<nowiki>{{-}}</nowiki>]] to clear the float and force the quote to appear at different vertical positions
+
+ <code><nowiki>{{Quote|Phrase|Somebody|float=left}} Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text.</nowiki></code>
+ <code><nowiki>{{-}}</nowiki></code> 
+ <code><nowiki>{{Quote|Phrase|Somebody|float=right}} Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.</nowiki></code>
+
+'''Would yield something like'''
+
+{{Quote|Phrase|Somebody|float=left}} Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text.
+{{-}}
+{{Quote|Phrase|Somebody|float=right}} Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.
+{{=}}
+{{H}}
+{{=}}
+Use [[:Template:=|<nowiki>{{=}}</nowiki>]] to clear the float and force the quote to appear at different vertical positions and also force a line in between them.
+
+ <code><nowiki>{{Quote|Phrase|Somebody|float=left}} Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text.</nowiki></code> 
+ <code><nowiki>{{=}}</nowiki></code>
+ <code><nowiki>{{Quote|Phrase|Somebody|float=right}} Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.</nowiki></code>
+
+'''Would yield something like'''
+
+{{Quote|Phrase|Somebody|float=left}} Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text.
+{{=}}
+{{Quote|Phrase|Somebody|float=right}} Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah.
+
+
+Note: specifying '''float''' will cause '''sides''' to default to "'''''0'''''" unless '''sides''' has also been specified.
+
+== Example ==
+{| {{prettytable}}
+! Code
+! Result
+|-
+| valign="top" | <code>{&#123;{{BASEPAGENAME}}&#124;Phrase|Somebody|Source}</code>
+| {{msg:{{BASEPAGENAME}}|Phrase|Somebody|Source}}
+|}
+
+<includeonly>
+[[Category:Templates|{{PAGENAME}}]]
+</includeonly><noinclude>
+[[Category:Template documentation|{{PAGENAME}}]]
+</noinclude>

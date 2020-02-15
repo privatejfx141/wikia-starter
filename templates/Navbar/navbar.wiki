@@ -1,0 +1,7 @@
+<includeonly>{{#switch:{{{type|}}}
+| full= <div class="noprint plainlinks t_navbar" id="Tnavbar-mini">[{{fullurl:Template:{{{1}}}}} <span class="t_navbar_item" style="color: white;" title="View this template.">view</span>] • [{{fullurl:Template_talk:{{{1}}}}} <span class="t_navbar_item" style="color: white;" title="Discussion about this template.">talk</span>] • [{{fullurl:Template:{{{1}}}|action=edit}} <span class="t_navbar_item" style="color: white;" title="You can edit this template. Please use the preview button before saving.">edit</span>]</div>
+| mini
+| #default = <div class="noprint plainlinks t_navbar" id="Tnavbar-mini">[{{fullurl:Template:{{{1}}}}} <span class="t_navbar_item" style="color: white;" title="View this template.">v</span>] • [{{fullurl:Template_talk:{{{1}}}}} <span class="t_navbar_item" style="color: white;" title="Discussion about this template.">d</span>] • [{{fullurl:Template:{{{1}}}|action=edit}} <span class="t_navbar_item" style="color: white;" title="You can edit this template. Please use the preview button before saving.">e</span>]</div>}}</includeonly>
+<noinclude>{{Documentation}}
+[[Category:Templates|{{PAGENAME}}]]
+</noinclude>

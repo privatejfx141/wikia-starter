@@ -1,0 +1,35 @@
+This template is used to create a navigation bar for the top of a template, particularly a [[Template:Navbox|navbox]].
+
+== Examples ==
+=== Required parameters ===
+* <code><nowiki>{{navbar|Name of Template}}</nowiki></code> the template name is required.
+
+=== Optional parameters ===
+{| class="wikitable"
+! Options !! Parameters !! Produces...
+|-
+| Normal || <code><nowiki>{{navbar|Template Name}}</nowiki></code> || {{navbar|navbar/doc}}
+|-
+| No "This box:" text. || <code><nowiki>{{navbar|Template Name|plain=1}}</nowiki></code> || {{navbar|navbar/doc|plain=1}}
+|-
+| Short version. || <code><nowiki>{{navbar|Template Name|mini=1}}</nowiki></code> || {{navbar|navbar/doc|mini=1}}
+|-
+| Good for "blending" into text. || <code><nowiki>{{navbar|Template Name|nodiv=1}}</nowiki></code> || Lorem {{navbar|navbar/doc|nodiv=1}} Ipsum
+|-
+| Blended, no "This box:" text. || <code><nowiki>{{navbar|Template Name|plain=1|nodiv=1}}</nowiki></code> || Lorem {{navbar|navbar/doc|plain=1|nodiv=1}} Ipsum
+|-
+| Blended, short version. || <code><nowiki>{{navbar|Template Name|mini=1|nodiv=1}}</nowiki></code> || Lorem {{navbar|navbar/doc|mini=1|nodiv=1}} Ipsum
+|-
+| For a color option. || <code><nowiki>{{navbar|Template Name|fontstyle=color:green}}</nowiki></code> || {{navbar|navbar/doc|fontstyle=color:green}}
+|-
+| With brackets.
+| <code><nowiki>{{navbar|Template Name|brackets=1}}</nowiki></code>
+| {{navbar|navbar/doc|brackets=1}}
+|}
+
+<includeonly>
+[[Category:Templates|{{PAGENAME}}]]
+[[Category:Navbox templates]]
+</includeonly><noinclude>
+[[Category:Template documentation|{{PAGENAME}}]]
+</noinclude>

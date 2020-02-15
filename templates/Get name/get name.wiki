@@ -1,0 +1,4 @@
+<includeonly>{{#ifeq:{{#rpos:{{{1}}}|(}}|-1|{{{1}}}|{{#sub:{{{1}}}|0|{{#len:{{#sub:{{{1}}}|0|{{#expr:{{#len:{{{1}}}}}-{{#len:{{#explode:{{{1}}}|(|-1}}}}-1}}}}}}}}}}</includeonly>
+<noinclude>{{Documentation}}
+[[Category:Templates]]
+</noinclude>
